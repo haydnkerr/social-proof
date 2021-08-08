@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-size: 0.9rem;
+    font-family: 'spartan';
+    padding: 100px 25px;
+    background-image: url(./images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    margin: auto
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    width: 100%;
+    max-width: 440px;
+    margin-bottom: 20px;
+}
+
+.review-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 15px 0px 15px 0px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.stars {
+    margin: 0px 20px 0px 20px;
+}
+
+.rating {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+.buyer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buyer {
+    background-color: hsl(300, 43%, 22%);
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+
+#name {
+    padding-top: 5px;
+    width: 200px;
+}
+
+.quote {
+    margin-top: 20px;
+}
+
+.buyer img {
+    border-radius: 50%;
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+}
+
+
+
+p {
+    font-weight: 400;
+    line-height: 25px;
+}
+
+h1 {
+    color: hsl(300, 43%, 22%); 
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.info p { 
+    color: hsl(303, 10%, 53%);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.review p {
+    color:hsl(300, 43%, 22%);
+    font-weight: 600;
+}
+
+#name p {
+    color: hsl(333, 80%, 67%);
+    padding-top: 5px;
+}
+
+h4 {
+    color: white;
+    
+}
+
+.buyer p {
+    color: hsl(300, 24%, 96%);
+    line-height: 25px;
+
+}
+
+@media (min-width:450px) {
+    .review {
+        flex-direction: row;
+    }
+
+    .one {
+        align-self: flex-start;
+    }
+
+    .three {
+        align-self: flex-end;
+    }
+    
+    .colton {
+        align-self: flex-start;
+    }
+
+    .anne {
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        background-image: url("./images/bg-pattern-top-desktop.svg");
+    }
+
+    .header {
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .info {
+        width: 50%;
+        text-align: left;
+    }
+
+    .review-container {
+        width: 50%;
+    }
+
+    
+
+    .buyer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+}
+
+@media (min-width: 1150px) {
+    .buyer-container {
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+        margin: auto;
+        height: 320px;
+    }
+}
